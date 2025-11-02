@@ -3,7 +3,7 @@ def hello := "world"
 def greet (name : String) : String :=
   "Hello, " ++ name ++ "!"
 
-def greet_length_is_12 (name : String) : (name.length + 8 = (greet name).length) := by
+def greet_length (name : String) : (name.length + 8 = (greet name).length) := by
   unfold greet
   have hello_length : "Hello, ".length = 7 := by
     rfl
