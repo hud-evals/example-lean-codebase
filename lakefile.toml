@@ -2,6 +2,8 @@ name = "exampleproj"
 version = "0.1.0"
 keywords = ["math"]
 defaultTargets = ["Main"]
+testDriver = "ExampleprojTest"
+
 
 [leanOptions]
 pp.unicode.fun = true # pretty-prints `fun a ↦ b`
@@ -12,6 +14,10 @@ maxSynthPendingDepth = 3
 [[require]]
 name = "mathlib"
 scope = "leanprover-community"
+
+
+[[lean_lib]]
+name = "ExampleprojTest"
 
 [[lean_lib]]
 name = "Exampleproj"
